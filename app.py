@@ -16,7 +16,7 @@ st.set_page_config(
     layout="centered"
 )
 
-st.title("🔬 Field Scientific Report")
+st.title(" Field Scientific Report")
 
 # --- 1. User Information ---
 st.subheader("1. Researcher Information")
@@ -145,7 +145,7 @@ if st.button("Generate PDF Report", use_container_width=True):
         buffer.seek(0)
 
         st.download_button(
-            label="⬇️ Download PDF Report",
+            label="Download PDF Report",
             data=buffer,
             file_name=f"field_report_{discovery_title.replace(' ', '_')}.pdf",
             mime="application/pdf",
